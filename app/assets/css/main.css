@@ -97,8 +97,9 @@ code {
   border: 1px solid var(--bark-soft);
 }
 
-pre {
-  background: var(--forest-deep);
+pre,
+pre.shiki {
+  background: var(--forest-deep) !important;
   color: var(--paper-light);
   padding: 1rem 1.2rem;
   overflow-x: auto;

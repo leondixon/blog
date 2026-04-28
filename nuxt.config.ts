@@ -6,6 +6,14 @@ export default defineNuxtConfig({
   content: {
     experimental: {
       sqliteConnector: 'native'
+    },
+    build: {
+      markdown: {
+        highlight: {
+          theme: 'vitesse-dark',
+          langs: ['ts', 'tsx', 'js', 'jsx', 'json', 'bash', 'sh', 'vue', 'css', 'html', 'md', 'yaml', 'python', 'go', 'rust']
+        }
+      }
     }
   },
   css: ['~/assets/css/main.css'],
