@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const route = useRoute()
-const path = `/${(route.params.slug as string[]).join('/')}`
+const path = `/blog/${(route.params.slug as string[]).join('/')}`
 
 const { data: post } = await useAsyncData(`post-${path}`, () =>
   queryCollection('posts').path(path).first()
