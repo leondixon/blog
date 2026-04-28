@@ -1,75 +1,38 @@
-# Nuxt Minimal Starter
+# AI Trail
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A Nuxt + `@nuxt/content` blog. Statically generated, hosted on Cloudflare Pages.
 
-## Setup
-
-Make sure to install dependencies:
+## Local
 
 ```bash
-# npm
-npm install
-
-# pnpm
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+pnpm dev        # http://localhost:3000
+pnpm generate   # static build → .output/public
 ```
 
-## Development Server
+Preview the static build: `npx serve .output/public`.
 
-Start the development server on `http://localhost:3000`:
+## Deploy — Cloudflare Pages (git-connected)
 
-```bash
-# npm
-npm run dev
+Connect this repo (`leondixon/blog`, branch `main`) in the Cloudflare dashboard:
+**Workers & Pages → Create → Pages → Connect to Git**.
 
-# pnpm
-pnpm dev
+Build settings:
 
-# yarn
-yarn dev
+| Field                 | Value             |
+| --------------------- | ----------------- |
+| Framework preset      | Nuxt (Static)     |
+| Build command         | `pnpm generate`   |
+| Build output dir      | `.output/public`  |
+| Root directory        | `/`               |
 
-# bun
-bun run dev
-```
+Environment variables (Build → Environment variables):
 
-## Production
+| Name             | Value     |
+| ---------------- | --------- |
+| `NODE_VERSION`   | `22`      |
+| `PNPM_VERSION`   | `10.33.0` |
 
-Build the application for production:
+Node version is also pinned in `.nvmrc`; pnpm version is pinned via `packageManager` in `package.json`. Cloudflare reads both.
 
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Pushes to `main` trigger a production deploy; pushes to other branches get a preview URL.
