@@ -5,7 +5,7 @@ const { data: posts } = await useAsyncData('posts-list', () =>
     .all()
 )
 
-useHead({ title: 'Forest Log — field notes from the AI trail' })
+useHead({ title: 'AI Trail — field notes from building with AI' })
 
 const banner = `   ,@@@@@@@,
 ,,,.   ,@@@@@@/@@,  .oo8888o.

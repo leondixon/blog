@@ -1,5 +1,5 @@
 <script setup lang="ts">
-useHead({ title: 'About — Forest Log' })
+useHead({ title: 'About — AI Trail' })
 </script>
 
 <template>
@@ -7,7 +7,7 @@ useHead({ title: 'About — Forest Log' })
     <article class="card">
       <h1>About this trail</h1>
       <p>
-        <strong>Forest Log</strong> is where I keep field notes on building
+        <strong>AI Trail</strong> is where I keep field notes on building
         with AI — what I'm shipping, what I'm learning, what's working,
         what isn't.
       </p>

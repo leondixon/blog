@@ -8,7 +8,7 @@ const trees = `   /\\     /\\      /\\\n  /  \\   /__\\    /  \\\n /____\\ /____
       <NuxtLink to="/" class="brand">
         <pre class="ascii brand-trees">{{ trees }}</pre>
         <div class="brand-text">
-          <span class="brand-title">FOREST LOG</span>
+          <span class="brand-title">AI TRAIL</span>
           <span class="brand-sub">// field notes from the AI trail</span>
         </div>
       </NuxtLink>

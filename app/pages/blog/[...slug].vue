@@ -11,7 +11,7 @@ if (!post.value) {
 }
 
 useHead({
-  title: `${post.value.title} — Forest Log`,
+  title: `${post.value.title} — AI Trail`,
   meta: [{ name: 'description', content: post.value.description }]
 })
 

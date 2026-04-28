@@ -9,7 +9,7 @@ const year = new Date().getFullYear()
 ~~~ {{ '~'.repeat(40) }} ~~~
       </p>
       <p>
-        <span class="meta">© {{ year }} · Forest Log</span>
+        <span class="meta">© {{ year }} · AI Trail</span>
         <span class="sep">//</span>
         <span class="meta">written by hand · grown with AI</span>
       </p>

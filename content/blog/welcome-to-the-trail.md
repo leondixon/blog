@@ -5,7 +5,7 @@ date: 2026-04-28
 tags: [meta, intro]
 ---
 
-This is the first entry in **Forest Log** — a public-ish journal of how
+This is the first entry in **AI Trail** — a public-ish journal of how
 I'm using AI in my day-to-day building. Not a tutorial site. Not a
 think-piece site. Just notes from the trail.
 

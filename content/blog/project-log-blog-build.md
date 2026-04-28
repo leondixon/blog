@@ -1,6 +1,6 @@
 ---
 title: "Project log: building this blog"
-description: How I scaffolded Forest Log with Nuxt 4 and the Content module — start to finish in an afternoon.
+description: How I scaffolded AI Trail with Nuxt 4 and the Content module — start to finish in an afternoon.
 date: 2026-04-28
 tags: [project-log, nuxt, design]
 ---
