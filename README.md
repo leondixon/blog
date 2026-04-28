@@ -2,6 +2,7 @@
 
 A Nuxt + `@nuxt/content` blog. Statically generated, hosted on Cloudflare Pages.
 
+
 ## Local
 
 ```bash
